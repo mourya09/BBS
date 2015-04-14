@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.atlantis</groupId>
+  <artifactId>atlantis</artifactId>
+  <version>0.1</version>
+  <packaging>war</packaging>
+  <name>Atlantis</name>
+  <description>Atlantis is a module which helps in entering the data in VoltDB and then extracting from it.</description>
+  <dependencies>
+  <dependency>
+    	<groupId>javax.jws</groupId>
+    	<artifactId>jsr181-api</artifactId>
+    	<version>1.0-MR1</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-beans</artifactId>
+    	<version>4.1.6.RELEASE</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-web</artifactId>
+    	<version>4.1.6.RELEASE</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-webmvc</artifactId>
+    	<version>4.1.6.RELEASE</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.fasterxml.jackson.core</groupId>
+    	<artifactId>jackson-databind</artifactId>
+    	<version>2.5.2</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.fasterxml.jackson.core</groupId>
+    	<artifactId>jackson-core</artifactId>
+    	<version>2.5.2</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>BankBrokerageSystem</finalName>
+    <resources>
+        <resource>
+            <directory>src/main/resources</directory>
+            <includes>
+                <include>*.xml</include>
+                <include>*.properties</include>               
+            </includes>			
+       	</resource>
+   	</resources>
+  </build>
+  <properties>
+  	<spring-version>4.1.6.RELEASE</spring-version>
+  </properties>
+
+</project>
